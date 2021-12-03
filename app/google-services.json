@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "978781619744",
+    "project_id": "watchlist-9f729",
+    "storage_bucket": "watchlist-9f729.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978781619744:android:5fc3a6e9402788c5839e45",
+        "android_client_info": {
+          "package_name": "com.example.watchlist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978781619744-gdao8kri7kb7q0gnvmnftmrtdmv0fc24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSukI-x2OL-469VO47O1oj646jMlfFveA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978781619744-gdao8kri7kb7q0gnvmnftmrtdmv0fc24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

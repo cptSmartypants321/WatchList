@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context=".Activity.MovieDetailActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewDet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.110000014">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_light"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/movieImageIdDet"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@color/cardview_dark_background" />
+
+            <TextView
+                android:id="@+id/movieTitleDet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/movieImageIdDet"
+                android:paddingLeft="5dp"
+                android:text="Movie title:"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/movieReleaseDet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movieTitleDet"
+                android:layout_toRightOf="@id/movieImageIdDet"
+
+                android:paddingLeft="5dp"
+                android:text="Release Date:" />
+
+            <TextView
+                android:id="@+id/movieCatDet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movieReleaseDet"
+                android:layout_toRightOf="@id/movieImageIdDet"
+                android:paddingLeft="5dp"
+                android:text="Category:" />
+
+            <TextView
+                android:id="@+id/movieRatingDet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movieCatDet"
+                android:layout_toRightOf="@id/movieImageIdDet"
+                android:paddingLeft="5dp"
+                android:text="Rating:" />
+
+            <TextView
+                android:id="@+id/runtimeDet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movieRatingDet"
+                android:layout_toRightOf="@id/movieImageIdDet"
+                android:paddingLeft="5dp"
+                android:text="Runtime:" />
+
+            <TextView
+                android:id="@+id/directedByDet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/movieImageIdDet"
+                android:padding="5dp"
+                android:text="Directed by:" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardViewDet">
+
+        <TextView
+            android:id="@+id/actorsDet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Actors:" />
+
+        <TextView
+            android:id="@+id/writersDet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/actorsDet"
+            android:padding="5dp"
+            android:text="Writers:" />
+
+        <TextView
+            android:id="@+id/plotDet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/writersDet"
+            android:padding="5dp"
+            android:text="Plot:" />
+
+        <TextView
+            android:id="@+id/boxOfficeDet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plotDet"
+            android:padding="5dp"
+            android:text="Box Office earnings:" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.856"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.912"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+</androidx.constraintlayout.widget.ConstraintLayout>

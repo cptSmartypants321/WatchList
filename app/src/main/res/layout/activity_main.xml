@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--<fragment
+            android:name="com.example.watchlist.Activity.MovieCardFragment"
+            android:id="@+id/movie_card_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=""
+            /> -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/movieImageId"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@color/cardview_dark_background" />
+
+                <TextView
+                    android:id="@+id/movieTitleId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/movieImageId"
+                    android:padding="10dp"
+
+                    android:text="Movie Title"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/movieReleaseID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/movieTitleId"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/movieImageId"
+                    android:padding="10dp"
+                    android:text="Released:" />
+
+                <TextView
+                    android:id="@+id/movieCatId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/movieReleaseID"
+                    android:layout_toRightOf="@id/movieImageId"
+                    android:padding="10dp"
+                    android:text="Category:" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+     <com.google.android.material.appbar.AppBarLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:theme="@style/Theme.WatchList.AppBarOverlay">
+
+         <androidx.appcompat.widget.Toolbar
+             android:id="@+id/toolbar"
+             android:layout_width="match_parent"
+             android:layout_height="?attr/actionBarSize"
+             android:layout_marginBottom="10dp"
+             android:background="#F8039F62"
+             app:popupTheme="@style/Theme.WatchList.PopupOverlay" />
+
+     </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
