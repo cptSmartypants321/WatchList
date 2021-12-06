@@ -23,8 +23,8 @@ public class LoginActivity  extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_layout);
-        email = findViewById(R.id.email_reg);
-        password = findViewById(R.id.password_reg);
+        email = findViewById(R.id.email_login);
+        password = findViewById(R.id.password_login);
         login = findViewById(R.id.register);
         auth=FirebaseAuth.getInstance();
         login.setOnClickListener(new View.OnClickListener() {
