@@ -8,3 +8,5 @@ Requirements
 3. The user must be able to search movies-Done
 4. The user must be able to add movies to their watchlist- not done
 5. The user should be able to view their watchlist- not done
+
+Youtube: https://youtu.be/rQKcRAs8bUc 
